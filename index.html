@@ -1,41 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto Web</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Quiz para programadores</title>
 </head>
 <body>
     <header>
-        <h1 style="color: rgb(133, 57, 171); background-color: rgb(237, 100, 225) ;">Laysa Eduarda De Melo Silva</h1>
-        <img src="laysa.jpeg" height="400" alt="minha foto>">
-        <p>Estudante da Escola Estadual Professor Lima Castro
-        </p>
+        <h1>Quiz interativo para programadores</h1>
+        <p>Teste os seus conhecimentos em programação</p>
     </header>
     <main>
-        <h2 style="color: darkorchid;">Semana 1</h2>
-        <ul>
-            <li><a href="atv1.html">Acesse Atividade 1</a></li>
-            <li><a href="atv2.html">Acesse Atividade 2</a></li>
-            <li><a href="atv3.html">Acesse Atividade 3</a></li>
-            <li><a href="atv4.html">Acesse Atividade 4</a></li>
-            <li><a href="atv5.html">Acesse Atividade 5</a></li>
-            <li><a href="desafio1.html">Acesse Desafio 1</a></li>
-            <li><a href="encontro 2.html">Acesse encontro 2</a></li>
-        </ul>
-        <h2 style="color: darkviolet;">Semana 2</h2>
-        <ul>
-            <li><a href="semana 2/atv1.html">Acesse Atividade1</a></li>
-            <li><a href="semana 2/atv2.html">Acesse Atividade2</a></li>
-            <li><a href="semana 2/atv3.html">Acesse Atividade3</a></li>
-            <li><a href="semana 2/atv4.html">Acesse Atividade 4</a></li>
-            <li><a href="semana 2/atv5.html">Acesse Atividade5</a></li>
-        </ul>
+        <!--Introdução-->
+        <section>
+            <h2>Sobre o quiz </h2>
+            <p><strong>Este quiz</strong> foi desenvolvido para testar seus conhecimentos em programação, como <em>Linguagens de programação</em>, conceitos básicos e mais</p>
+            <p>Você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, texto e perguntas de data. Desafia-se com este quiz!</p>
+            <p>Vocẽ poderá encontrar alguns acrônicos como <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> que são comunente usados em questões relacionadas ao desenvolvimento web</p>
+        </section>
+       
+        <!--Pergunta 1: Múltipla-->
+        <section>
+            <h2>Pergunta 1: Qual linguagem é utilizada para estruturar páginas web?</h2>
+            <form>
+                <input type="radio" value="Pyyhon" id="pla"
+                name="pergunta1">
+                <label for="pla">Python</label><br>
+                <input type="radio" value="HTML" id="p1b"
+                name="pergunta1">
+                <label for="p1b">HTML</label><br>
+                <input type="radio" value="JavaScript"
+                id="p1c" name="pergunta1">
+                <label for="p1c">JavaScript</label><br>
+                <input type="radio" value="Ruby" id="p1d"
+                name="pergunta1">
+                <label for="p1d">Ruby</label>
+            </form>
+        </section>
+
+        <!--Pergunta2: Texto-->
+        <section>
+            <h2>Pergunta 2: Na URL https://www.google.com o trecho "google.com" é o ____________________</h2>
+        </section>
+        <form>
+            <input type="text" id="p2" name="pergunta2"
+            placeholder="Digite aqui sua resposta...">
+        </form>
+        <section>
+
+            <!--Pergunta3: Data-->
+            <section>
+                <h2>Pergunta 3: Em que ano o HTML lançou sua primeira versão?</h2>
+            </section>
+                <input type="date" id="p3" name="pergunta3">
+            <section>
+
+            <!--Pergunta 4: Upload de arquivo-->
+            <section>
+                <h2>Pergunta 4: Faça o upload de um arquivo</h2>
+                <form>
+                    <input type="file" id="p4" name="pergunta4">
+                </form>
+            </section>
+
+            <!--Pergunta 5:Múltipla escolha -->
+            <section>
+                <h2>Pergunta 5: Selecione o atributo do input que define o seu tipo</h2>
+            </section>
+            <form> 
+                <select id="p5" name="pergunta5">
+                    <option value="type">type</option>
+                    <option value="name">name</option>
+                    <option value="id">id</option>
+                    <option value="value">value</option>
+                </select>
+            </form>
+        <section>
+
+            <!--Nos dê o seu feedback-->
+        </section>
+            <form>
+                <fieldset>
+                    <legend>Nos dê seu feedback</legend>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome"
+                    placeholder="Digite seu nome..."><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                    placeholder="Digite seu email..."><br>
+
+                    <label for="feedback">Feedback:</label><br>
+                    <textarea id="feedback" name="feedback"
+                    rows="4" cols="50" placeholder="Digite seu feedback..."></textarea><br>
+               
+                    <button onclick="alert('FEEDBACK ENVIADO!')" type="submit">Enviar</button>
+                </fieldset>
+
+                
+            </form>
     </main>
-    <footer>
-        <hr>
-        <p>Desenvolvimento do projeto PIBIC Jr Escola Estadual Lima Castro</p>
-    </footer>
+    <footer></footer>
 </body>
 </html>
